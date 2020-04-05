@@ -100,20 +100,20 @@ text-align: center;
 }
 
 #r {
-    background: url('../rock.png') ;
+    background: url('rock.png') ;
     background-size: 70px 70px;
     display: inline-block;
     margin-right: 15px;
 }
 
 #p {
-    background: url('../paper.png');
+    background: url('paper.png');
     background-size: 70px 70px;
     display: inline-block;
 }
 
 #s {
-    background: url('../scissors.png');
+    background: url('scissors.png');
     background-size: 70px 70px;
     display: inline-block;
     margin-left: 15px;
