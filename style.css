@@ -135,4 +135,7 @@ text-align: center;
     box-shadow: 0 0 10px solid  red;
 }
 
-
+.yellow-glow {
+    border: 4px solid yellow !important;
+    box-shadow: 0 0 10px solid  yellow;
+}
