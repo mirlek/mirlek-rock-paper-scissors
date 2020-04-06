@@ -28,6 +28,8 @@ function win(userChoice, compChoice){
     result_div.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)}. My congratulations!`
     setTimeout(() => userChoise_hover.classList.add('green-glow'),300);
     setTimeout(() => userChoise_hover.classList.remove('green-glow'),1000);
+    setTimeout(() => document.getElementById(compChoice).classList.add('red-glow'),300);
+    setTimeout(() => document.getElementById(compChoice).classList.remove('red-glow'),1000);
 }
 
 function lost(userChoice, compChoice) {
@@ -37,10 +39,15 @@ function lost(userChoice, compChoice) {
     result_div.innerHTML = `${convertToWord(userChoice)} loses ${convertToWord(compChoice)}. Try next time!`
     setTimeout(() => document.getElementById(userChoice).classList.add('red-glow'),300);
     setTimeout(() => document.getElementById(userChoice).classList.remove('red-glow'),1000);
+    setTimeout(() => document.getElementById(compChoice).classList.add('green-glow'),300);
+    setTimeout(() => document.getElementById(compChoice).classList.remove('green-glow'),1000);
+    
 }
 
 function draw(userChoice, compChoice){
     result_div.innerHTML = `${convertToWord(userChoice)} same ${convertToWord(compChoice)}. It's a draw!`
+    setTimeout(() => document.getElementById(compChoice).classList.add('yellow-glow'),300);
+    setTimeout(() => document.getElementById(compChoice).classList.remove('yellow-glow'),1000);
 }
 
 function game(userChoice) {
